@@ -105,12 +105,12 @@ let right = document.querySelector('.right')
 //     })
 // })
 
-// monitor.style.backgroundImage = `url(../img/pick1.jpg)`
+monitor.style.backgroundImage = `url(img/pick1.jpg)`
 let c = 1;
 right.addEventListener('click',function(){
     c ++ ;
     if(c>0){
-        monitor.style.backgroundImage = `url(../img/pick${c}.jpg)`;
+        monitor.style.backgroundImage = `url(img/pick${c}.jpg)`;
         console.log(c)
         let text = document.querySelectorAll('.description');
         text[c-2].style.opacity = '0';
@@ -120,7 +120,7 @@ right.addEventListener('click',function(){
 left.addEventListener('click',function(){
     c -- ;
     if(c>0){
-    monitor.style.backgroundImage = `url(../img/pick${c}.jpg)`;
+    monitor.style.backgroundImage = `url(img/pick${c}.jpg)`;
     console.log(c)
     let text = document.querySelectorAll('.description');
     text[c].style.opacity = '0';
