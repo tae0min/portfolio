@@ -105,7 +105,7 @@ let right = document.querySelector('.right')
 //     })
 // })
 
-monitor.style.backgroundImage = `url(../img/pick1.jpg)`
+// monitor.style.backgroundImage = `url(../img/pick1.jpg)`
 let c = 1;
 right.addEventListener('click',function(){
     c ++ ;
