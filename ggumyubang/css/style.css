@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {color: inherit; text-decoration: none;}
+body {color: #2B593D; font-family: 'Noto Sans KR', sans-serif;}
+
+div#wrap {width: 100%; height: 100%; outline: 1px dotted blue;}
+header {width: 100%; height: 150px; background-color: #ECFEF1; }
+header h1 {font-family: 'Gugi', cursive; height: 150px; line-height: 150px; margin-left: 100px; font-size: 50px; float: left;}
+header div.menu {width: 960px; height: 150px; position: relative; float: right;}
+
+header div.menu ul.sm {width: 150px; height: 30px; position: absolute; top: 30px; right: 100px;}
+header div.menu ul.sm li {width: 30px; height: 30px; text-align: center; float: left; line-height: 30px;}
+header div.menu ul.sm li:nth-of-type(2) {margin: 0 30px;}
+header div.menu ul.sm li a {display: block;}
+header div.menu ul.sm li a i {font-size: 25px;}
+
+header div.menu > ul.gnb{width: 960px; height: 60px; position: absolute; bottom: 0; right: 0; background-color: #2B593D;}
+header div.menu > ul.gnb > li {float: left; width: 150px; height: 40px; margin: 10px 25px; float: left; color: #fff; line-height: 40px; font-weight: bold; text-align: center;}
+header div.menu > ul.gnb > li:nth-of-type(1) {margin-left: 110px;}
+header div.menu > ul.gnb > li a {display: block; transition: all 1s;}
+header div.menu > ul.gnb > li a:hover {background-color: #ECFEF1; color: #2B593D;}
+
+main {width: 100%;}
+main div.ad {position: relative;}
+main div.ad section {width: 100%; height: 800px; background-image: url(../img/natural_house3.png); background-repeat: no-repeat; background-position: center; background-size: 130%; opacity: .5;}
+main div.ad div.mainTxt {width: 1320px; position: absolute; top: 0; left: 50%; transform: translate(-50%, 0);}
+main div.ad div.mainTxt h2 {font-family: 'East Sea Dokdo', cursive; font-size: 120px; position: absolute; }
+main div.ad div.mainTxt h2:nth-of-type(1) {top: 100px; left: 100px;}
+main div.ad div.mainTxt h2:nth-of-type(2) {top: 220px; left: 400px;}
+main div.ad div.mainTxt div.backbord {width: 160px; height: 160px; transform: rotate(45deg); border: 3px solid #2B593D; position: absolute; top: 100px; left: 35px; background-color: #fff; opacity: .8;}
+main div.ad div.mainTxt div.minimg {width: 250px; height: 200px; background-image: url(../img/natural_house2.jpg); background-position: center; background-size: cover; position: absolute; right: 0; top: 100px;}
+main div.ad div.mainTxt div.bigimg {width: 900px; height: 500px; background-image: url(../img/natural_house1.jpg); background-position: center; background-size: cover; position: absolute; left: 0; top: 800px; transform: translate(0, -50%);}
+
+main div.maincontents {width: 1320px; margin: 0 auto; padding-top: 250px; position: relative;}
+main div.maincontents::before {content: ""; background: url(../img/interior_tree3.png); background-position: 0 1200px; background-repeat: no-repeat; background-size: 1400px ; opacity: .3; position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+main div.maincontents section {width: 1320px; height: 800px; overflow: hidden; display: flex; border-bottom: 1px solid #2B593D;}
+main div.maincontents section div.txt {width: 500px; position: relative;}
+main div.maincontents section div.txt h1 {font-size: 400px; font-family: 'Audiowide', cursive; position: absolute; color: #00A65F; opacity: .3;}
+main div.maincontents section div.txt h2 {font-size: 50px; position: absolute;}
+main div.maincontents section div.txt p {font-size: 16px; position: absolute;}
+main div.maincontents section div.contactimg {width: 820px; height: 850px; position: relative;}
+main div.maincontents section div.contactimg img {position: absolute;}
+
+main div.maincontents section.solid div.txt h1 {left: -30px; top: 0;}
+main div.maincontents section.solid div.txt h2 {left: 60px; top: 350px;}
+main div.maincontents section.solid div.txt p {left: 60px; top: 440px;}
+main div.maincontents section.solid div.contactimg img {width: 900px; height: auto;  bottom: 100px; right: -90px;}
+
+main div.maincontents section.new {border: none;}
+main div.maincontents section.new div.txt h1 {right: -130px; top: 0;}
+main div.maincontents section.new div.txt h2 {right: 60px; top: 350px;}
+main div.maincontents section.new div.txt p {right: 60px; top: 440px; text-align: right;}
+main div.maincontents section.new div.contactimg img {width: 600px; height: auto;  bottom: 0; left: 0;}
+
+main div.maincontents section.beautiful div.txt h1 {left: -130px; top: 0;}
+main div.maincontents section.beautiful div.txt h2 {left: 60px; top: 350px;}
+main div.maincontents section.beautiful div.txt p {left: 60px; top: 440px;}
+main div.maincontents section.beautiful div.contactimg img:nth-of-type(1) {width: 400px; height: auto;  top: 100px; right: 0;}
+main div.maincontents section.beautiful div.contactimg img:nth-of-type(2) {width: 400px; height: auto;  top: 300px; right: 300px;}
+main div.maincontents section.beautiful div.contactimg img:nth-of-type(3) {width: 400px; height: auto;  bottom: 100px; right: 0;}
+
+main div.maincontents section.fun div.txt h1 {right: -130px; top: 0;}
+main div.maincontents section.fun div.txt h2 {right: 60px; top: 350px;}
+main div.maincontents section.fun div.txt p {right: 60px; top: 440px; text-align: right;}
+main div.maincontents section.fun div.contactimg img {width: 800px; height: auto;  bottom: 150px; left: 0;}
+
+main div.maincontents section.midad {height: 600px; background-image: url(../img/interior_banner2.jpg); background-position: center; background-size: contain; background-repeat: no-repeat;}
+
+main div.maincontents section.shop {display: block; text-align: center; height: 940px; position: relative; overflow: visible;}
+main div.maincontents section.shop h2 {font-size: 50px; margin: 80px 0;}
+main div.maincontents section.shop div.shoping ul {width: 810px; height: 40px; margin: 0 auto;}
+main div.maincontents section.shop div.shoping ul li {float: left; width: 100px; height: 40px; border: 1px solid #2B593D; border-radius: 20px; line-height: 40px; margin: 0 30px; cursor: pointer; font-weight: bold;}
+main div.maincontents section.shop div.shoping ul li.on {background-color: #2B593D; color: #fff;} 
+main div.maincontents section.shop div.shoping ul li:hover {background-color: #2B593D; color: #fff;} 
+
+main div.maincontents section.shop div.show {width: 1320px; height: 600px; margin-top: 30px; position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;}
+main div.maincontents section.shop div.show div.select {font-size: 40px; position: absolute; color: #00A65F; cursor: pointer;}
+main div.maincontents section.shop div.show div.select:nth-of-type(1) {bottom: -80px; left: -30px;}
+main div.maincontents section.shop div.show div.select:nth-of-type(2) {top: 150px; left: 300px;}
+main div.maincontents section.shop div.show div.select:nth-of-type(3) {bottom: 70px; left: 470px;}
+main div.maincontents section.shop div.show div.select:nth-of-type(4) {top: 200px; right: 250px;}
+
+main div.maincontents section.shop div.show div.select div.detail {font-size: 16px; width: 300px; height: 70px; background-color: rgba(250,250,250,.8); padding: 30px; color: #2B593D; opacity: 0; transition: all 1s;}
+main div.maincontents section.shop div.show div.select div.detail div.img {float: left; margin-right: 30px;}
+main div.maincontents section.shop div.show div.select div.detail div.img img {width: 100px; height: auto;}
+main div.maincontents section.shop div.show div.select div.detail div.txt2 {float: left; text-align: left;}

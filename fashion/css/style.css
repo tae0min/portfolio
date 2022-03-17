@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {color: inherit; text-decoration: none;}
+
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+header {width: 100%; border-bottom: 1px solid #ddd; }
+header div.inner {width: 1180px; height: 120px; margin: 0 auto; position: relative;}
+header div.inner h1 {background-image: url(../img/logo.png); background-position: center; background-repeat: no-repeat; background-size: contain;}
+header div.inner h1 a {font: bold 24px/1 'arial'; color: #444; }
+header div.inner ul.util {position: absolute; top: 20px; right: 30px; }
+header div.inner ul.util li {float: left;}
+header div.inner ul.util li a {display: block; font: 12px/1 'arial'; color: #999; padding: 0 10px;}
+header div.inner ul#gnb {position: absolute; bottom: 0; right: 0;}
+header div.inner ul#gnb li {float: left;}
+header div.inner ul#gnb li a {display: block; font: 12px/1 'arial'; color: #555; padding: 20px 40px; transition: all .5s;}
+header div.inner ul#gnb li a:hover {background-color: #555; color: #fff;}
+
+figure {width: 100%; height: calc(100vh - 120px); background: #000; position: relative; overflow: hidden; padding-top: 250px}
+figure video {object-fit: cover; width: 100%; height: 100%; opacity: 1; position: absolute; top: 0; left: 0;}
+
+figure div.inner {width: 1180px; margin: 0 auto; position: relative;}
+figure div.inner h1 {font: 120px/1 'arial'; color: #fff; margin-bottom: 20px;}
+figure div.inner p {font: 16px/1.4 'arial'; color: #aaa; margin-bottom: 60px;}
+figure div.inner a {display: block; width: 400px; height: 30px; border: 1px solid #bbb; font: bold 11px/30px 'arial'; color: #fff; text-align: center; letter-spacing: 1px; transition: all .5s;}
+figure div.inner a:hover {background-color: #fff; color: #555;}
+
+section {width: 100%; padding: 150px 0;}
+section:nth-of-type(2){background-color: #999;}
+section div.inner {width: 1180px; margin: 0 auto;}
+section div.inner h1 {font: bold 24px/1 'arial'; color: #555; text-align: center; margin-bottom: 80px;  }
+section div.inner div.wrap {width: 100%;}
+section div.inner div.wrap:after {content: ""; display: block; clear: both;}
+section div.inner div.wrap article {width: 280px; float: left; margin-right: 20px;}
+section div.inner div.wrap article:last-child {margin-right: 0;} 
+section div.inner div.wrap article h2 {margin-bottom: 10px;} 
+section div.inner div.wrap article h2 a {font: bold 16px/1 'arial'; color: #555;} 
+section div.inner div.wrap article p {font: 14px/1.4 'arial'; color: #777;} 
+section div.inner div.wrap article div.pic {width: 100%; height: 120px; background-color: #333; margin-bottom: 15px; position: relative; overflow: hidden; background-size: cover; background-position: center;} 
+section div.inner div.wrap article div.pic img {object-fit: cover; width: 100%; height: 100%; transition: all 1s;}
+section div.inner div.wrap article div.pic:hover img {transform: translate(-280px,0);}
+section div.inner div.wrap article:last-child div.pic img {object-position: bottom;}
+section div.inner div.wrap article:last-child div.pic12 img {object-position: top;}
+section:nth-of-type(2) div.inner h1 {color: #fff;}
+section:nth-of-type(2) div.inner div.wrap article h2 a {color: #fff;} 
+section:nth-of-type(2) div.inner div.wrap article p {color: #fff;} 
+
+footer {width: 100%; background-color: #333; padding: 50px 0; border-top: 1px solid #888;}
+footer div.inner {width: 1180px; margin: 0 auto;}
+footer div.inner div.upper {width: 100%; border-bottom: 1px solid #777; padding-bottom: 20px;}
+footer div.inner div.upper:after {content: ""; display: block; clear: both;}
+footer div.inner div.upper h1 {float: left; font: bold 24px/1 'arial'; color: #666;}
+footer div.inner div.upper ul {float: right; margin-left: 20px;}
+footer div.inner div.upper ul li {float: left; margin-left: 20px;}
+footer div.inner div.upper ul li a {display: block; font: bold 14px/1 'arial'; color: #666;}
+footer div.inner div.lower {width: 100%; padding-top: 60px;}
+footer div.inner div.lower:after {content: ""; display: block; clear: both;}
+footer div.inner div.lower address {width: 50%; font: 12px/1.4 'arial'; color: #777; margin-bottom: 20px; float: left;}
+footer div.inner div.lower p {width: 50%; font: 12px/1 'arial'; text-align: end; color: #777; float: right;}

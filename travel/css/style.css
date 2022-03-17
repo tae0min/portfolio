@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Play:wght@400;700&display=swap');
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {color: inherit; text-decoration: none;}
+
+body { position: fixed; width: 100%; height: 100%; background-color: #111;}
+
+/* figure.vid {width: 100%; height: 100%; position: fixed; top: 0; left: 0; opacity: .9;} */
+/* figure.vid video {width: 100%; min-width: 100%; min-height: 100%; object-fit: cover;} */
+figure.bac {width: 100%; height: 100%; position: fixed; top: 0; left: 0; opacity: .9;} 
+figure.bac img {display: block; width: 100%; height: 100%; position: fixed; top: 0; left: 0; opacity: .9;} 
+h1 {position: fixed; top: 40px; left: 40px; z-index: 10;}
+h1 img {width: 200px; height: auto;}
+header {width: 700px; height: 100%; background: linear-gradient(#0072ff,#fff,#0072ff); transform: skewX(-40deg); position: fixed; top: 0; left: -420px;}
+header ul.gnb {width: 220px; position: absolute; top:150px; right: 0px;}
+header ul.gnb > li {position: relative;}
+header ul.gnb >li > a {display: block; width: 220px; height: 50px; font: bold 18px/3 play; color: #222; box-sizing: border-box; padding-right: 40px; text-align: right;}
+header ul.gnb > li.on > a {background-color: #111; color: #fff;}
+header ul.gnb > li:hover > a {background-color: #111; color: #fff;}
+header ul.gnb > li > a > em {display: inline-block; transform: skewX(40deg);}
+header ul.gnb > li > a > em > i {margin-right: 20px;}
+header ul.gnb > li > ul {position: absolute; left: 0; top: 0; opacity: 0; transition: all .4s;}
+header ul.gnb > li:hover > ul {opacity: .8; left: 205px;}
+header ul.gnb > li > ul > li > a {display: block; width: 150px; height: 40px; background-color: #222; border-bottom: 3px solid #0072ff; font: bold 16px/2.5 arial; color: #fff; box-sizing: border-box; padding-left: -50px; margin-bottom: 3px;transition: all .5s; text-align: center;}
+header ul.gnb a:hover {background-color: #0072ff; color: #333;}
+header ul.gnb > li.on ul {opacity: .8; left: 205px; top: -10px;}
+header ul.gnb li.on ul a {background-color: #444; color: #fff;}
+
+ul.sns {position: fixed; top: 60px; right: 50px;}
+ul.sns li {float: left; margin-right: 30px;}
+ul.sns li i.fa {font-size: 25px; color: #fff; opacity: .5; transform: scale(1); transition: all .7s;}
+ul.sns li i.fa:hover {opacity: 1; transform: scale(1.4);}
+section.txtBox {width: 360px; height: 280px; position: fixed; top: 200px; right: 70px;}
+section.txtBox p.txt {position: absolute; top: 200px; right: 0; font-size: 34px; font-family: play; color:#bbb; letter-spacing: -2px;}
+section.txtBox p.txt b {font: bold 34px arial; color: #a3ccff; margin-left: 20px;}
+section.txtBox p.tit {position: absolute; top: 0; right: 0; font-size: 140px; color: #a3ccff; font-family: Monoton; letter-spacing: -1px;}
+section.txtBox em {font-size: 50px; font-family: play; color: #fff;}
+
+section.side {width: 800px; height: 100%; position: fixed; bottom: 0; right: -800px; background-color: #111; opacity: .5; transform: skewX(-40deg); transition: all .8s;}
+section.side:hover {right: -500px; opacity: .8;}
+section.side div.con {width: 400px; height: 100%; position: absolute; left: 150px; bottom: 0px; background: #000; box-sizing: border-box; padding: 10px; transition: all 1s;}
+section.side:hover div.con {left: 50px;}
+section.side div.con p {width: 300px; height: 100px; position: absolute; left: 50px;}
+section.side div.con p a img {display: block; width: 300px; height: 80px;}
+
+section.side div.con p:nth-child(1) {bottom: 270px; transform: translateX(200px); transition: all .4s;}
+section.side div.con p:nth-child(2) {bottom: 160px; transform: translateX(200px); transition: all .8s;}
+section.side div.con p:nth-child(3) {bottom: 50px; transform: translateX(200px); transition: all 1.2s;}
+section.side div.con p img {opacity: 1;}
+section.side div.con p img:hover {width: 300px; height: 70px; opacity: .3; transition: all .5s;}
+section.side div.con p em {display: inline-block; font: bold 16px/1.7 arial; color: #0072ff; transform: skewX(40deg);}
+section.side:hover div.con p {transform: translateX(0);}
+
+section.side div.btnContents {width: 150px; height: 50px; position: absolute; bottom: 40px; left: 100px; color:#0072ff; transform: skewX(40deg);}
+section.side:hover div.btnContents {left: 700px;}
+div.btnContents i {font-size: 60px; position: absolute; bottom: 0; right: 0; opacity: 1;}
+div.btnContents i:nth-child(1) {animation: ani linear 1.5s 0s infinite;}
+div.btnContents i:nth-child(2) {animation: ani linear 1.5s 0.5s infinite;}
+div.btnContents i:nth-child(3) {animation: ani linear 1.5s 1s infinite;}
+
+@keyframes ani {
+    0% {right: 0; transform: scale(1); opacity: 1;}
+    100% {right: 100px; transform: scale(1.5); opacity: 0;}
+}

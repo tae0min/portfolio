@@ -437,7 +437,14 @@ div#wrap main section.web div.webMe div.content {
   margin-top: 140px;
 }
 
-div#wrap main section.web div.webMe div.content div {
+div#wrap main section.web div.webMe div.content a {
+  display: block;
+  width: 280px;
+  height: 160px;
+  z-index: 10;
+}
+
+div#wrap main section.web div.webMe div.content a div {
   width: 280px;
   height: 160px;
   opacity: 0;
@@ -446,29 +453,33 @@ div#wrap main section.web div.webMe div.content div {
   transition: all 2s;
 }
 
-div#wrap main section.web div.webMe div.content div:nth-of-type(1) {
-  opacity: 1;
-}
-
-div#wrap main section.web div.webMe div.content div:nth-of-type(3) img {
-  width: 260px;
-  height: auto;
-  margin-top: 20px;
-}
-
-div#wrap main section.web div.webMe div.content div:nth-of-type(4) {
-  opacity: 1;
-}
-
-div#wrap main section.web div.webMe div.content div:nth-of-type(5) {
-  opacity: 1;
-}
-
-div#wrap main section.web div.webMe div.content img {
+div#wrap main section.web div.webMe div.content a div img {
   width: auto;
   height: 160px;
   display: block;
   margin: 0 auto;
+}
+
+div#wrap main section.web div.webMe div.content a:nth-of-type(1) div {
+  opacity: 1;
+}
+
+div#wrap main section.web div.webMe div.content a:nth-of-type(3) div {
+  padding-top: 20px;
+  height: 140px;
+}
+
+div#wrap main section.web div.webMe div.content a:nth-of-type(3) div img {
+  width: 260px;
+  height: auto;
+}
+
+div#wrap main section.web div.webMe div.content a:nth-of-type(4) div {
+  opacity: 1;
+}
+
+div#wrap main section.web div.webMe div.content a:nth-of-type(5) div {
+  opacity: 1;
 }
 
 div#wrap main section.web div.webMe p {

@@ -52,12 +52,13 @@ function resetTyping(){
 
 
 //스크롤을 했을때 늘어나는 차트
-window.addEventListener('scroll',function(){
-    let scrollGauge = window.scrollY
+let main = document.querySelector('main');
+main.addEventListener('scroll',function(){
+    let scrollValue = main.scrollTop;
+    console.log(scrollValue);
     // console.log(scrollGauge)
-    let windowY = window.innerHeight;
     // console.log(windowY+3)
-    if (scrollGauge > 1300){
+    if (scrollValue > 940 ){
         chart1.children[1].children[0].style.animation = "stack90 2s ease-out";
         chart2.children[1].children[0].style.animation = "stack90 2s ease-out";
         chart3.children[1].children[0].style.animation = "stack70 2s ease-out";
@@ -131,6 +132,7 @@ left.addEventListener('click',function(){
 
 let bar = document.querySelectorAll('div.subBar div')
 let content = document.querySelectorAll('div.content div')
+let tag = document.querySelectorAll('div.content a')
 console.log(content[0].children)
 
 for (let i=0; i<3; i++){
@@ -153,10 +155,12 @@ bar[0].addEventListener('click',function(){
     content[3].style.opacity = '1';
     content[3].children[0].setAttribute('src','img/logo2.png');
     content[3].children[0].setAttribute('alt','dsd logo');
+    tag[3].setAttribute('href','dessert/index.html');
     content[4].style.animation = 'showBox 1s ease-out';
     content[4].style.opacity = '1';
     content[4].children[0].setAttribute('src','img/logo3.png');
     content[4].children[0].setAttribute('alt','??? logo');
+    tag[4].setAttribute('href','dessert/index.html');
 })
 bar[1].addEventListener('click',function(){
     for (let i=0; i<6; i++){
@@ -167,14 +171,17 @@ bar[1].addEventListener('click',function(){
     content[1].style.opacity = '1';
     content[1].children[0].setAttribute('src','img/logo4.png');
     content[1].children[0].setAttribute('alt','ggumyubang logo');
+    tag[1].setAttribute('href','ggumyubang/index.html');
     content[3].style.animation = 'showBox 1s ease-out';
     content[3].style.opacity = '1';
     content[3].children[0].setAttribute('src','img/logo5.png');
     content[3].children[0].setAttribute('alt','seetruth logo');
+    tag[3].setAttribute('href','fashion/index.html');
     content[4].style.animation = 'showBox 1s ease-out';
     content[4].style.opacity = '1';
     content[4].children[0].setAttribute('src','img/logo6.png');
     content[4].children[0].setAttribute('alt','fall in music logo');
+    tag[4].setAttribute('href','music/index.html');
 })
 bar[2].addEventListener('click',function(){
     for (let i=0; i<6; i++){
