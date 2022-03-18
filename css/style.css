@@ -464,16 +464,6 @@ div#wrap main section.web div.webMe div.content a:nth-of-type(1) div {
   opacity: 1;
 }
 
-div#wrap main section.web div.webMe div.content a:nth-of-type(3) div {
-  padding-top: 20px;
-  height: 140px;
-}
-
-div#wrap main section.web div.webMe div.content a:nth-of-type(3) div img {
-  width: 260px;
-  height: auto;
-}
-
 div#wrap main section.web div.webMe div.content a:nth-of-type(4) div {
   opacity: 1;
 }
@@ -518,6 +508,116 @@ div#wrap main section.web div.webMe div.subBar div:nth-of-type(2) {
 
 div#wrap main section.web div.webMe div.subBar div.select {
   opacity: 1;
+}
+
+div#wrap main footer {
+  width: 1920px;
+  scroll-snap-align: start;
+}
+
+div#wrap main footer div.goodbye {
+  width: 1920px;
+  height: 420px;
+}
+
+div#wrap main footer div.goodbye p {
+  width: 1920px;
+  height: 420px;
+  line-height: 420px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #999;
+}
+
+div#wrap main footer div.txtwrap {
+  width: 1320px;
+  height: 520px;
+  background-color: #999;
+  padding: 0 300px;
+  color: #fff;
+}
+
+div#wrap main footer div.txtwrap div.more {
+  width: 660px;
+  height: 335px;
+  float: left;
+}
+
+div#wrap main footer div.txtwrap div.more h1 {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+div#wrap main footer div.txtwrap div.more p {
+  margin-bottom: 10px;
+}
+
+div#wrap main footer div.txtwrap div.cont {
+  width: 660px;
+  height: 335px;
+  float: right;
+}
+
+div#wrap main footer div.txtwrap div.cont ul.footmenu {
+  width: 600px;
+  float: right;
+  margin-top: 30px;
+  -webkit-transform: translate(30px, 0);
+          transform: translate(30px, 0);
+}
+
+div#wrap main footer div.txtwrap div.cont ul.footmenu li {
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  float: left;
+  margin-left: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 145px;
+}
+
+div#wrap main footer div.txtwrap div.cont ul.footmenu li a {
+  display: block;
+}
+
+div#wrap main footer div.txtwrap div.cont ul.sns {
+  width: 180px;
+  height: 40px;
+  float: right;
+  -webkit-transform: translate(10px, 0);
+          transform: translate(10px, 0);
+}
+
+div#wrap main footer div.txtwrap div.cont ul.sns li {
+  width: 40px;
+  float: left;
+  margin-left: 20px;
+}
+
+div#wrap main footer div.txtwrap div.cont ul.sns li a {
+  display: block;
+}
+
+div#wrap main footer div.txtwrap div.cont ul.sns li a i {
+  font-size: 30px;
+}
+
+div#wrap main footer div.txtwrap div.copy {
+  width: 1320px;
+  height: 185px;
+  text-align: center;
+}
+
+div#wrap main footer div.txtwrap div.copy p.a {
+  margin-top: 30px;
+}
+
+div#wrap main footer div.txtwrap div.copy p.b {
+  font-size: 18px;
+  margin-top: 40px;
 }
 
 @-webkit-keyframes stack90 {

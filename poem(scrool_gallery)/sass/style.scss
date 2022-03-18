@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+/*  Reset CSS  */
+* {margin:0;  padding:0;}
+li {list-style: none; }
+a {text-decoration:none; color:#555;}
+img {border:0;}
+body {font-family: 'Noto Sans KR', sans-serif; background-color: rgb(218, 244, 255); width: 100%; min-width: 1400px; height: 4000px;}
+
+h1 {position: fixed; top: 20px; right: 20px; z-index: 5; 
+    img {box-shadow: 5px 5px 3px #888;}
+}
+#sns {position: fixed; top: 30px; left: 60px;
+    li {float: left; margin-right: 30px;
+        i {font-size: 25px; color: #888; transition: all .5s;
+            &:hover {transform: scale(1.5);}
+        } 
+    }
+}
+#navi {position: fixed; top: 50%; left: 60px; margin-top: -280px;
+    li {float: left; font-size: 16px; font-weight: bold; margin-right: 25px;
+        a {color: #888; transition: all .5s;}
+        &:hover a {color: rgb(56, 195, 255);}
+        a.on {color: rgb(56, 195, 255);}
+    }
+}
+.txt {position: fixed; top: 50%; right: 20px; margin-top: -80px; font-size: 100px; color: #fff; text-align: right; line-height: .5;
+    span {color: rgb(142, 221, 255);}
+    em {font-family: arial; font-size: 18px; font-style: nomal; color: #888; letter-spacing: 1px;}
+}
+.copyright {position: fixed; bottom: 20px; right: 30px; font: 12px/1.5 arial; letter-spacing: 4px; color: #999; text-align: center;}
+section {position: fixed; top: 50%; left: 0; margin-top: -250px; width: 4600px; height: 500px;
+    article {position: relative; top: 50%; width: 180px; height: 400px; margin: 10px; margin-top: -200px; box-sizing: border-box; float: left; background-color: #fff; border-radius: 5px; box-shadow: 3px 3px 3px #bbb; overflow: hidden; transition: all .7s;
+        h2 {position: absolute; top: 300px; right: 0; width: 100%; height: 50px; box-sizing: border-box; padding-left: 20px; background-color: #111; opacity: .4; z-index: 2; cursor: pointer; transition: all .5s;
+            a {display: block; font-size: 14px; font-weight: bold; line-height: 3.5; color: #fff; letter-spacing: 2px; transition: all .5s;}
+        } 
+        &:hover h2 {opacity: .8;}
+        strong {display: block; position: absolute; left: 0; top: 0; width: 100%; height: 300px; opacity: .4; overflow: hidden; text-align: center; transition: all .5s;
+            img {height: 300px; width: auto; }
+        }
+        &:hover strong {opacity: 1;}
+        p {position: absolute; top: 50%; right: 0; z-index: 1; margin-top: 0; width: 100%; height: 0px; text-align: center; overflow: hidden; background-color: #fff; opacity: 0; transition: all .8s;
+            img {width: auto; height: 100%;}
+        }
+        em {position: absolute; bottom: 50px; right: -300px; z-index: 2; display: inline-block; box-sizing: border-box; padding: 10px 20px; background-color: #000; color: #fff; opacity: .8; transition: all 1s;}
+        span {position: absolute; top: 110px; right: -300px; z-index: 3; font-size: 20px; color: #fff; cursor: pointer;}
+    }
+    article.on {width: 780px; height: 500px; margin-top: -250px;
+        h2 {top: 100px; height: 100px; background-color: #111; opacity: .3;
+            a {font-size: 30px; color: #fff;}
+        }
+        strong {opacity: .0;}
+        p {height: 500px; margin-top: -250px; opacity: 1;}
+        em { right: 20px;}
+        span {right: 20px;}
+        
+    }
+}

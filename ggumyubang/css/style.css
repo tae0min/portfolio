@@ -75,8 +75,9 @@ main div.maincontents section.shop div.shoping ul li {float: left; width: 100px;
 main div.maincontents section.shop div.shoping ul li.on {background-color: #2B593D; color: #fff;} 
 main div.maincontents section.shop div.shoping ul li:hover {background-color: #2B593D; color: #fff;} 
 
-main div.maincontents section.shop div.show {width: 1320px; height: 600px; margin-top: 30px; position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;}
-main div.maincontents section.shop div.show div.select {font-size: 40px; position: absolute; color: #00A65F; cursor: pointer;}
+main div.maincontents section.shop div.show {width: 1320px; height: 600px; margin-top: 30px; position: relative; background-position: center; background-repeat: no-repeat; background-size: cover; transition: all 1s;}
+main div.maincontents section.shop div.show div.select {font-size: 40px; position: absolute; color: #00A65F; cursor: pointer; opacity: 0;}
+main div.maincontents section.shop div.show:hover div.select {opacity: 1;}
 main div.maincontents section.shop div.show div.select:nth-of-type(1) {bottom: -80px; left: -30px;}
 main div.maincontents section.shop div.show div.select:nth-of-type(2) {top: 150px; left: 300px;}
 main div.maincontents section.shop div.show div.select:nth-of-type(3) {bottom: 70px; left: 470px;}

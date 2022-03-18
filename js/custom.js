@@ -144,6 +144,8 @@ for (let i=0; i<3; i++){
     })
 }
 
+let text = document.querySelector('.webMe p')
+// console.log(text)
 bar[0].addEventListener('click',function(){
     for (let i=0; i<6; i++){
         content[i].style.animation = 'hideBox 1s ease-out';
@@ -161,6 +163,7 @@ bar[0].addEventListener('click',function(){
     content[4].children[0].setAttribute('src','img/logo3.png');
     content[4].children[0].setAttribute('alt','??? logo');
     tag[4].setAttribute('href','dessert/index.html');
+    text.innerText = "Dessert";
 })
 bar[1].addEventListener('click',function(){
     for (let i=0; i<6; i++){
@@ -182,6 +185,7 @@ bar[1].addEventListener('click',function(){
     content[4].children[0].setAttribute('src','img/logo6.png');
     content[4].children[0].setAttribute('alt','fall in music logo');
     tag[4].setAttribute('href','music/index.html');
+    text.innerText = "Hobby";
 })
 bar[2].addEventListener('click',function(){
     for (let i=0; i<6; i++){
@@ -196,5 +200,6 @@ bar[2].addEventListener('click',function(){
     content[2].style.opacity = '1';
     content[5].style.animation = 'showBox 1s ease-out';
     content[5].style.opacity = '1';
+    text.innerText = "Healing";
 })
 
