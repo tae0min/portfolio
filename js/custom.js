@@ -196,10 +196,13 @@ bar[2].addEventListener('click',function(){
     content[1].style.opacity = '1';
     content[1].children[0].setAttribute('src','img/logo7.png');
     content[1].children[0].setAttribute('alt','leisure logo');
+    tag[1].setAttribute('href','leisure/index.html');
     content[2].style.animation = 'showBox 1s ease-out';
     content[2].style.opacity = '1';
+    tag[2].setAttribute('href','travel/index.html');
     content[5].style.animation = 'showBox 1s ease-out';
     content[5].style.opacity = '1';
+    tag[5].setAttribute('href','poem/index.html');
     text.innerText = "Healing";
 })
 
