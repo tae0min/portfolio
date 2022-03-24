@@ -34,7 +34,7 @@ main div.ad div.mainTxt div.bigimg {width: 810px; height: 450px; background-imag
 
 main div.maincontents {width: 1320px; margin: 0 auto; padding-top: 250px; position: relative;}
 main div.maincontents::before {content: ""; background: url(../img/interior_tree3.png); background-position: 0 1200px; background-repeat: no-repeat; background-size: 1400px ; opacity: .1; position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
-main div.maincontents section {width: 1320px; height: 800px; overflow: hidden; display: flex; border-bottom: 1px solid #2B593D;}
+main div.maincontents section {width: 1320px; height: 750px; overflow: hidden; display: flex; border-bottom: 1px solid #2B593D;}
 main div.maincontents section div.txt {width: 500px; position: relative;}
 main div.maincontents section div.txt h1 {font-size: 300px; font-family: 'Audiowide', cursive; position: absolute; color: #00A65F; opacity: .3;}
 main div.maincontents section div.txt h2 {font-size: 40px; position: absolute;}
@@ -42,37 +42,37 @@ main div.maincontents section div.txt p {font-size: 16px; position: absolute;}
 main div.maincontents section div.contactimg {width: 820px; height: 850px; position: relative;}
 main div.maincontents section div.contactimg img {position: absolute;}
 
-main div.maincontents section.solid div.txt h1 {left: 0; top: 100px;}
+main div.maincontents section.solid div.txt h1 {left: 0; top: 150px;}
 main div.maincontents section.solid div.txt h2 {left: 60px; top: 350px;}
 main div.maincontents section.solid div.txt p {left: 60px; top: 440px;}
-main div.maincontents section.solid div.contactimg img {width: 900px; height: auto;  bottom: 100px; right: -90px;}
+main div.maincontents section.solid div.contactimg img {width: 800px; height: auto;  top: 80px; right: -90px; opacity: .9;}
 
 main div.maincontents section.new {border: none;}
-main div.maincontents section.new div.txt h1 {left: -20px; top: 100px;}
+main div.maincontents section.new div.txt h1 {left: -20px; top: 150px;}
 main div.maincontents section.new div.txt h2 {right: 60px; top: 350px;}
 main div.maincontents section.new div.txt p {right: 60px; top: 440px; text-align: right;}
-main div.maincontents section.new div.contactimg img {width: 600px; height: auto;  bottom: 0; left: 0;}
+main div.maincontents section.new div.contactimg img {width: 500px; height: auto;  top: 50px; left: 0;}
 
-main div.maincontents section.beautiful div.txt h1 {left: -100px; top: 100px;}
+main div.maincontents section.beautiful div.txt h1 {left: -100px; top: 150px;}
 main div.maincontents section.beautiful div.txt h2 {left: 60px; top: 350px;}
 main div.maincontents section.beautiful div.txt p {left: 60px; top: 440px;}
-main div.maincontents section.beautiful div.contactimg img:nth-of-type(1) {width: 150px; height: auto;  top: 100px; right: 100px;}
-main div.maincontents section.beautiful div.contactimg img:nth-of-type(2) {width: 600px; height: auto;  top: 200px; right: 250px;}
-main div.maincontents section.beautiful div.contactimg img:nth-of-type(3) {width: 250px; height: auto;  bottom: 140px; right: 0;}
+main div.maincontents section.beautiful div.contactimg img:nth-of-type(1) {width: 150px; height: auto;  top: 120px; right: 100px;}
+main div.maincontents section.beautiful div.contactimg img:nth-of-type(2) {width: 500px; height: auto;  top: 220px; right: 250px;}
+main div.maincontents section.beautiful div.contactimg img:nth-of-type(3) {width: 250px; height: auto;  bottom: 178px; right: 0;}
 
-main div.maincontents section.fun div.txt h1 {left: -20px; top: 100px;}
+main div.maincontents section.fun div.txt h1 {left: -20px; top: 150px;}
 main div.maincontents section.fun div.txt h2 {right: 60px; top: 350px;}
-main div.maincontents section.fun div.txt p {right: 60px; top: 440px; text-align: right;}
-main div.maincontents section.fun div.contactimg img {width: 800px; height: auto;  bottom: 150px; left: 0;}
+main div.maincontents section.fun div.txt p {right: 30px; top: 440px; text-align: left;}
+main div.maincontents section.fun div.contactimg img {width: 600px; height: auto;  top: 200px; left: 0;}
 
 main div.maincontents section.midad {height: 600px; background-image: url(../img/interior_banner2.jpg); background-position: center; background-size: contain; background-repeat: no-repeat;}
 
 main div.maincontents section.shop {display: block; text-align: center; height: 940px; position: relative; overflow: visible;}
 main div.maincontents section.shop h2 {font-size: 50px; margin: 80px 0;}
 main div.maincontents section.shop div.shoping ul {width: 810px; height: 40px; margin: 0 auto;}
-main div.maincontents section.shop div.shoping ul li {float: left; width: 100px; height: 40px; border: 1px solid #2B593D; border-radius: 20px; line-height: 40px; margin: 0 30px; cursor: pointer; font-weight: bold;}
-main div.maincontents section.shop div.shoping ul li.on {background-color: #2B593D; color: #fff;} 
-main div.maincontents section.shop div.shoping ul li:hover {background-color: #2B593D; color: #fff;} 
+main div.maincontents section.shop div.shoping ul li {float: left; width: 100px; height: 40px; border-radius: 20px; line-height: 40px; margin: 0 30px; cursor: pointer; font-weight: bold; transition: all 1s;}
+main div.maincontents section.shop div.shoping ul li.on {background-color: #2B593D; color: #fff; box-shadow: none;} 
+main div.maincontents section.shop div.shoping ul li:hover {box-shadow: 0 0 10px #2B593D;} 
 
 main div.maincontents section.shop div.show {width: 1320px; height: 600px; margin-top: 30px; position: relative; background-position: center; background-repeat: no-repeat; background-size: cover; transition: all 1s;}
 main div.maincontents section.shop div.show div.select {font-size: 40px; position: absolute; color: #00A65F; cursor: pointer; opacity: 0;}

@@ -306,7 +306,8 @@ body {
   border: 1px solid #bbb;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.3) url(../img/robot.png) no-repeat center center;
+  background: rgba(0, 0, 0, 0.3) url(https://cdnimg.melon.co.kr/resource/image/web/melonguide/guide_pcp_section01_img01@2x-20210719.png) no-repeat center center;
+  background-size: contain;
   margin-bottom: 50px;
 }
 
