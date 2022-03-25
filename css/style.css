@@ -312,9 +312,11 @@ div#wrap main section.banner div.bannerMe h1 {
 }
 
 div#wrap main section.banner div.bannerMe div.monitor {
-  float: left;
-  -webkit-transform: translate(-200px, 50px);
-          transform: translate(-200px, 50px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-46%, -50%);
+          transform: translate(-46%, -50%);
   height: 400px;
 }
 
@@ -333,23 +335,11 @@ div#wrap main section.banner div.bannerMe div.monitor div.bn {
 }
 
 div#wrap main section.banner div.bannerMe div.control {
-  float: right;
-  -webkit-transform: translate(0, -285px);
-          transform: translate(0, -285px);
-}
-
-div#wrap main section.banner div.bannerMe div.control div.gs {
-  width: 400px;
-  height: 355px;
-  position: relative;
-}
-
-div#wrap main section.banner div.bannerMe div.control div.gs p {
-  opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 30px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-44%, 280%);
+          transform: translate(-44%, 280%);
 }
 
 div#wrap main section.banner div.bannerMe div.control div.lr {
@@ -361,7 +351,7 @@ div#wrap main section.banner div.bannerMe div.control div.lr {
 
 div#wrap main section.banner div.bannerMe div.control div.lr span {
   display: block;
-  margin-right: 100px;
+  margin-right: 120px;
   margin-top: 20px;
   font-size: 40px;
   position: relative;
@@ -405,6 +395,28 @@ div#wrap main section.banner div.bannerMe div.control div.lr span.right:hover im
   opacity: .1;
 }
 
+div#wrap main section.banner div.bannerMe div.big {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-43%, 630%);
+          transform: translate(-43%, 630%);
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+div#wrap main section.banner div.bannerMe div.big:hover {
+  -webkit-box-shadow: 0 0 10px #777;
+          box-shadow: 0 0 10px #777;
+}
+
 div#wrap main section.web {
   overflow: hidden;
   scroll-snap-align: start;
@@ -434,15 +446,23 @@ div#wrap main section.web div.webMe div.webcont {
 div#wrap main section.web div.webMe div.webcont div.webtxt {
   width: 500px;
   height: 400px;
-  background-color: #072130;
+  z-index: 10;
 }
 
-div#wrap main section.web div.webMe div.webcont div.gosite {
+div#wrap main section.web div.webMe div.webcont div.webtxt > span {
+  display: block;
+  width: 500px;
+  height: 360px;
+  font-size: 20px;
+}
+
+div#wrap main section.web div.webMe div.webcont div.webtxt div.gosite {
   width: 150px;
   height: 40px;
+  margin: 0 auto;
 }
 
-div#wrap main section.web div.webMe div.webcont div.gosite a {
+div#wrap main section.web div.webMe div.webcont div.webtxt div.gosite a {
   display: block;
   line-height: 40px;
   text-align: center;
@@ -451,7 +471,12 @@ div#wrap main section.web div.webMe div.webcont div.gosite a {
   color: #072130;
 }
 
-div#wrap main section.web div.webMe div.webcont div.gosite a span {
+div#wrap main section.web div.webMe div.webcont div.webtxt div.gosite a:hover {
+  background-color: #072130;
+  color: #fff;
+}
+
+div#wrap main section.web div.webMe div.webcont div.webtxt div.gosite a span {
   font-size: 16px;
 }
 
@@ -463,40 +488,36 @@ div#wrap main section.web div.webMe div.webcont div.content {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-div#wrap main section.web div.webMe div.webcont div.content a {
-  display: block;
-  width: 210px;
-  height: 120px;
+  margin-left: 350px;
   z-index: 10;
 }
 
-div#wrap main section.web div.webMe div.webcont div.content a div {
+div#wrap main section.web div.webMe div.webcont div.content div {
   width: 210px;
   height: 120px;
   opacity: 0;
   background-color: #fff;
   -webkit-transition: all 2s;
   transition: all 2s;
+  cursor: pointer;
 }
 
-div#wrap main section.web div.webMe div.webcont div.content a div img {
+div#wrap main section.web div.webMe div.webcont div.content div img {
   width: auto;
   height: 120px;
   display: block;
   margin: 0 auto;
 }
 
-div#wrap main section.web div.webMe div.webcont div.content a:nth-of-type(1) div {
+div#wrap main section.web div.webMe div.webcont div.content div:nth-of-type(1) {
   opacity: 1;
 }
 
-div#wrap main section.web div.webMe div.webcont div.content a:nth-of-type(4) div {
+div#wrap main section.web div.webMe div.webcont div.content div:nth-of-type(4) {
   opacity: 1;
 }
 
-div#wrap main section.web div.webMe div.webcont div.content a:nth-of-type(5) div {
+div#wrap main section.web div.webMe div.webcont div.content div:nth-of-type(5) {
   opacity: 1;
 }
 
@@ -509,7 +530,7 @@ div#wrap main section.web div.webMe div.webcont p {
   -webkit-transform: translate(-50px, 150px);
           transform: translate(-50px, 150px);
   color: #fff;
-  opacity: .5;
+  opacity: .4;
 }
 
 div#wrap main section.web div.webMe div.webcont div.subBar {
@@ -647,6 +668,73 @@ div#wrap main footer div.txtwrap div.copy p.a {
 div#wrap main footer div.txtwrap div.copy p.b {
   font-size: 18px;
   margin-top: 40px;
+}
+
+div#wrap div.popup {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+
+div#wrap div.popup div.close {
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  color: #fff;
+}
+
+div#wrap div.popup div.close i {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+div#wrap div.popup img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div#wrap div.popup div.control {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100vh;
+  height: 100px;
+}
+
+div#wrap div.popup div.control div.lr {
+  width: 100%;
+  color: #fff;
+}
+
+div#wrap div.popup div.control div.lr span {
+  display: block;
+  font-size: 40px;
+  opacity: .5;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+div#wrap div.popup div.control div.lr span:hover {
+  opacity: 1;
+}
+
+div#wrap div.popup div.control div.lr span.prev {
+  float: left;
+}
+
+div#wrap div.popup div.control div.lr span.next {
+  float: right;
 }
 
 @-webkit-keyframes stack90 {

@@ -110,13 +110,13 @@ monitor.style.backgroundImage = `url(img/pick1.jpg)`
 let c = 1;
 right.addEventListener('click',function(){
     c ++ ;
-    if(c>0){
+    if(10>c){
         monitor.style.backgroundImage = `url(img/pick${c}.jpg)`;
         console.log(c)
         let text = document.querySelectorAll('.description');
         text[c-2].style.opacity = '0';
         text[c-1].style.opacity = '1';
-    }
+    }else{c=10}
 })
 left.addEventListener('click',function(){
     c -- ;
@@ -145,7 +145,23 @@ for (let i=0; i<3; i++){
 }
 
 let text = document.querySelector('.webMe p')
-// console.log(text)
+let webText = document.querySelector('.webtxt span');  
+let webLink = document.querySelector('.gosite a'); 
+// console.log(webText, webLink)
+
+content[0].addEventListener('click',function(){
+    webText.innerHTML = '<strong>쉐이킷</strong><br><br>칵테일 판매 사이트인 SHAKIT 웹페이지의 소스를 가지고 리뉴얼 한 사이트 입니다.';
+    webLink.setAttribute('href','cocktail/index.html')
+})
+content[3].addEventListener('click',function(){
+    webText.innerHTML = '<strong>DSD</strong><br><br>다양한 디저트를 홍보하고 다양한 스토리를 전하는 사이트입니다.<br><br>브랜드 스토리 : <br>DSD는 Deserve Special Dessert의 약자로 "특별한 디저트를 받을만하다"라는 의미입니다. 오늘 하루도 수고한 당신께 특별한 디저트로 보상을 해줍시다.';
+    webLink.setAttribute('href','dessert/index.html')
+})
+content[4].addEventListener('click',function(){
+    webText.innerHTML = '<strong>오설록</strong><br><br>차 파매 사이트인 오설록 웹페이지를 리뉴얼 한 사이트입니다.';
+    webLink.setAttribute('href','osulloc_renual/index.html')
+})
+
 bar[0].addEventListener('click',function(){
     for (let i=0; i<6; i++){
         content[i].style.animation = 'hideBox 1s ease-out';
@@ -157,13 +173,24 @@ bar[0].addEventListener('click',function(){
     content[3].style.opacity = '1';
     content[3].children[0].setAttribute('src','img/logo2.png');
     content[3].children[0].setAttribute('alt','dsd logo');
-    tag[3].setAttribute('href','dessert/index.html');
     content[4].style.animation = 'showBox 1s ease-out';
     content[4].style.opacity = '1';
     content[4].children[0].setAttribute('src','img/logo3.png');
     content[4].children[0].setAttribute('alt','??? logo');
-    tag[4].setAttribute('href','dessert/index.html');
     text.innerText = "Dessert";
+
+    content[0].addEventListener('click',function(){
+        webText.innerHTML = '<strong>쉐이킷</strong><br><br>칵테일 판매 사이트인 SHAKIT 웹페이지의 소스를 가지고 리뉴얼 한 사이트 입니다.';
+        webLink.setAttribute('href','cocktail/index.html')
+    })
+    content[3].addEventListener('click',function(){
+        webText.innerHTML = '<strong>DSD</strong><br><br>다양한 디저트를 홍보하고 다양한 스토리를 전하는 사이트입니다.<br><br>브랜드 스토리 : <br>DSD는 Deserve Special Dessert의 약자로 "특별한 디저트를 받을만하다"라는 의미입니다. 오늘 하루도 수고한 당신께 특별한 디저트로 보상을 해줍시다.';
+        webLink.setAttribute('href','dessert/index.html')
+    })
+    content[4].addEventListener('click',function(){
+        webText.innerHTML = '<strong>오설록</strong><br><br>차 파매 사이트인 오설록 웹페이지를 리뉴얼 한 사이트입니다.';
+        webLink.setAttribute('href','osulloc_renual/index.html')
+    })
 })
 bar[1].addEventListener('click',function(){
     for (let i=0; i<6; i++){
@@ -174,18 +201,28 @@ bar[1].addEventListener('click',function(){
     content[1].style.opacity = '1';
     content[1].children[0].setAttribute('src','img/logo4.png');
     content[1].children[0].setAttribute('alt','ggumyubang logo');
-    tag[1].setAttribute('href','ggumyubang/index.html');
     content[3].style.animation = 'showBox 1s ease-out';
     content[3].style.opacity = '1';
     content[3].children[0].setAttribute('src','img/logo5.png');
     content[3].children[0].setAttribute('alt','seetruth logo');
-    tag[3].setAttribute('href','fashion/index.html');
     content[4].style.animation = 'showBox 1s ease-out';
     content[4].style.opacity = '1';
     content[4].children[0].setAttribute('src','img/logo6.png');
     content[4].children[0].setAttribute('alt','fall in music logo');
-    tag[4].setAttribute('href','music/index.html');
     text.innerText = "Hobby";
+
+    content[1].addEventListener('click',function(){
+        webText.innerHTML = '<strong>꾸며방</strong><br><br>자신이 꾸미고 싶은 방을 미리 꾸며보고 견적을 문의 받는 인테리어 사이트입니다.<br><br>브랜드 스토리 : ';
+        webLink.setAttribute('href','ggumyubang/index.html')
+    })
+    content[3].addEventListener('click',function(){
+        webText.innerHTML = '<strong>SEETRUTH</strong><br><br>';
+        webLink.setAttribute('href','fashion/index.html')
+    })
+    content[4].addEventListener('click',function(){
+        webText.innerHTML = '<strong>FALL IN MUSIC</strong><br><br>';
+        webLink.setAttribute('href','music/index.html')
+    })
 })
 bar[2].addEventListener('click',function(){
     for (let i=0; i<6; i++){
@@ -196,13 +233,51 @@ bar[2].addEventListener('click',function(){
     content[1].style.opacity = '1';
     content[1].children[0].setAttribute('src','img/logo7.png');
     content[1].children[0].setAttribute('alt','leisure logo');
-    tag[1].setAttribute('href','leisure/index.html');
     content[2].style.animation = 'showBox 1s ease-out';
     content[2].style.opacity = '1';
-    tag[2].setAttribute('href','travel/index.html');
     content[5].style.animation = 'showBox 1s ease-out';
     content[5].style.opacity = '1';
-    tag[5].setAttribute('href','poem/index.html');
     text.innerText = "Healing";
+
+    content[1].addEventListener('click',function(){
+        webText.innerHTML = '<strong>LEISURE</strong><br><br>';
+        webLink.setAttribute('href','leisure/index.html')
+    })
+    content[2].addEventListener('click',function(){
+        webText.innerHTML = '<strong>FREEFLY</strong><br><br>';
+        webLink.setAttribute('href','travel/index.html')
+    })
+    content[5].addEventListener('click',function(){
+        webText.innerHTML = '<strong>POEM</strong><br><br>';
+        webLink.setAttribute('href','poem/index.html')
+    })
 })
 
+let showBig = document.querySelector('.big')
+// showBig.addEventListener('click',function)
+
+let popUp = document.querySelector('.popup')
+let popBanner = document.querySelector('.popup img')
+let prev = document.querySelector ('.prev')
+let next = document.querySelector('.next')
+let popClose = document.querySelector('.close')
+showBig.addEventListener('click',function(){
+    popUp.style.display = 'block'
+})
+next.addEventListener('click',function(){
+    c ++ ;
+    if(10>c){
+        popBanner.setAttribute('src',`img/pop${c}.jpg`);
+        console.log(c)
+    }else{c=10}
+})
+prev.addEventListener('click',function(){
+    c -- ;
+    if(c>0){
+        popBanner.setAttribute('src',`img/pop${c}.jpg`);
+    console.log(c)
+    }else{c=1}
+})
+popClose.addEventListener('click',function(){
+    popUp.style.display = 'none'
+})
