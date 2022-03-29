@@ -212,15 +212,15 @@ bar[1].addEventListener('click',function(){
     text.innerText = "Hobby";
 
     content[1].addEventListener('click',function(){
-        webText.innerHTML = '<strong>꾸며방</strong><br><br>자신이 꾸미고 싶은 방을 미리 꾸며보고 견적을 문의 받는 인테리어 사이트입니다.<br><br>브랜드 스토리 : ';
+        webText.innerHTML = '<strong>꾸며방</strong><br><br>자신이 꾸미고 싶은 방을 미리 꾸며보고 견적을 문의 받는 인테리어 사이트입니다.<br><br>브랜드 스토리 : 꾸며방은 방에 자신의 생각을 표현하고 다른 사람들과 공유하여 자신의 감성과 개성을 더 다양하게 넓히고, 공감하고 소통 할 수 있는 브랜드입니다.';
         webLink.setAttribute('href','ggumyubang/index.html')
     })
     content[3].addEventListener('click',function(){
-        webText.innerHTML = '<strong>SEETRUTH</strong><br><br>';
+        webText.innerHTML = '<strong>SEETRUTH</strong><br><br>다양한 코디와 개성있는 의류를 볼 수 있는 패션 잡지 사이트 입니다.<br><br>브랜드 스토리 : 진실을 보다라는 의미로 자신의 현 상태를 직면하고 트랜드와 개성을 갖추는 것을 추구하는 브랜드 입니다.';
         webLink.setAttribute('href','fashion/index.html')
     })
     content[4].addEventListener('click',function(){
-        webText.innerHTML = '<strong>FALL IN MUSIC</strong><br><br>';
+        webText.innerHTML = '<strong>FALL IN MUSIC</strong><br><br>음악의 정보를 모아볼 수 있는 음악감상 사이트입니다.<br><br>브랜드 스토리 : 음악에 빠지다라는 의미로 음악에 집중할 수 있게 편리함을 추구한 브랜드입니다.';
         webLink.setAttribute('href','music/index.html')
     })
 })
@@ -240,16 +240,16 @@ bar[2].addEventListener('click',function(){
     text.innerText = "Healing";
 
     content[1].addEventListener('click',function(){
-        webText.innerHTML = '<strong>LEISURE</strong><br><br>';
+        webText.innerHTML = '<strong>LEISURE</strong><br><br>휴가, 휴식을 위한 여행지 정보사이트입니다.';
         webLink.setAttribute('href','leisure/index.html')
     })
     content[2].addEventListener('click',function(){
-        webText.innerHTML = '<strong>FREEFLY</strong><br><br>';
+        webText.innerHTML = '<strong>웹투어</strong><br><br>여행 예약 사이트인 웹투어 웹페이지를 리뉴얼한 사이트입니다.';
         webLink.setAttribute('href','travel/index.html')
     })
     content[5].addEventListener('click',function(){
-        webText.innerHTML = '<strong>POEM</strong><br><br>';
-        webLink.setAttribute('href','poem/index.html')
+        webText.innerHTML = '<strong>Write Down Wisdom</strong><br><br>바쁘게 살아온 사람들을 위해 잠시 여유를 갖게 하는 짧은 글 사이트입니다.';
+        webLink.setAttribute('href','wisdom/index.html')
     })
 })
 
