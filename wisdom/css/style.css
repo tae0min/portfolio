@@ -34,8 +34,8 @@ h1 {
 }
 
 h1 img {
-  -webkit-box-shadow: 5px 5px 3px #888;
-          box-shadow: 5px 5px 3px #888;
+  width: auto;
+  height: 125px;
 }
 
 #sns {
@@ -224,6 +224,7 @@ section article p {
 section article p img {
   width: auto;
   height: 100%;
+  opacity: .8;
 }
 
 section article em {
@@ -262,7 +263,7 @@ section article.on h2 {
   top: 100px;
   height: 100px;
   background-color: #111;
-  opacity: .3;
+  opacity: .6;
 }
 
 section article.on h2 a {

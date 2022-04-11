@@ -3,5 +3,67 @@
 * {margin: 0; padding: 0;}
 li {list-style: none;}
 a {color: inherit; text-decoration: none;}
-body {font-family: 'Noto Sans KR', sans-serif;}
+body {font-family: 'Noto Sans KR', sans-serif; color: #333;}
 
+div#popup {width: 100vw; height: 100vh; background-color: rgba(0,0,0,.5); display: none;}
+div#popup img {width: 500px; height: auto; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+div#popup div.close {position: fixed; top: 28%; right: 38%; cursor: pointer;} 
+div#popup div.close i {font-size: 20px; color: #fff;}
+
+div#wrap {width: 100vw; height: 100vh; background-color: rgb(102, 102, 102);}
+div#header_wrap {width: 100%; height: 100vh; background-image: url(../img/back.jpg); background-position: center 70%; background-repeat: none; background-size: cover;}
+header {width: 1520px; margin: 0 auto;}
+header div.menu {width: 100%; height: 120px;}
+header div.menu h1{width: 125px; height: 90px; padding-top: 30px; float: left;}
+header div.menu h1 img {width: auto; height: 60px;}
+header div.menu nav {width: 1395px; float: left;}
+header div.menu nav > ul.top_menu {width: 720px; float: right; padding-top: 40px;}
+header div.menu nav > ul.top_menu > li {width: 120px; height: 40px; text-align: center; line-height: 40px; float: left; color: #fff;}
+header div.menu nav > ul.top_menu > li:not(:nth-child(1)) {margin-left: 30px;}
+
+header div.h_txt {width: 100%; height: 820px; position: relative;}
+header div.h_txt p {position: absolute; top: 50%; left: 0; transform: translate(0 , -50%); font-size: 50px; line-height: 1.5; color: #333;}
+header div.h_txt p strong {font-size: 95px; letter-spacing: 30px; color: #fff;}
+
+div.main_menu {width: 100%; height: 80px; background-color: lightgray;}
+div.main_menu nav {width: 1520px; height: 40px; margin: 0 auto; padding: 20px 0;}
+div.main_menu nav div.fullmenu {width: 30px; height: 20px; border: 1px solid #737373; float: left; margin-right: 10px; padding: 10px 5px; margin-left: 20px;}
+div.main_menu nav div.fullmenu:hover {background-color: #737373;}
+div.main_menu nav div.fullmenu div {width: 30px; height: 3px; background-color: #737373;}
+div.main_menu nav div.fullmenu div.bar1 {transition: all .5s;}
+div.main_menu nav div.fullmenu:hover div.bar1 {transform: rotate(45deg) translate(6px,6px); background-color: #fff;}
+div.main_menu nav div.fullmenu div.bar2 {margin: 6px 0; transition: all .5s;}
+div.main_menu nav div.fullmenu:hover div.bar2 {opacity: 0;}
+div.main_menu nav div.fullmenu div.bar3 {transition: all .5s;}
+div.main_menu nav div.fullmenu:hover div.bar3 {transform: rotate(-45deg) translate(6px,-6px); background-color: #fff;}
+
+div.main_menu nav > ul > li {position: relative;}
+div.main_menu nav > ul > li:not(:nth-of-type(1)){margin-left: 14px;}
+div.main_menu nav > ul > li > a {display: block; transition: all .5s; padding-bottom: 20px;}
+div.main_menu nav > ul > li > ul {display: none; background-color: rgba(179, 225, 255,.7); position: absolute; top: 60px; left: -50%; width: 200%; z-index: 10;}
+div.main_menu nav > ul > li > ul > li > a {display: block; transition: all .5s;}
+div.main_menu nav > ul > li > ul > li > a:hover {color: #fff; font-weight: bold;}
+div.main_menu nav > ul > li > ul > li > a {display: block;}
+div.main_menu nav > ul > li:hover > ul{display: block;}
+div.main_menu nav > ul.gnb_out {float: left; height: 40px; border-right: 1px solid rgba(0,0,0,.3);}
+div.main_menu nav > ul.gnb_out > li{width: 120px; height: 40px; line-height: 40px; text-align: center; float: left;}
+
+div.main_menu nav > ul.gnb_in {float: left; height: 40px; border-left: 1px solid rgba(0,0,0,.3);}
+div.main_menu nav > ul.gnb_in > li {width: 120px; height: 40px; line-height: 40px; text-align: center; float: left;}
+
+div.search {width: 100%; height: 840px; outline: 1px solid red; background-color: rgb(227, 245, 255);}
+div.search div.s_contents {width: 1520px; height: 840px; outline: 1px solid red; margin: 0 auto;}
+
+div.search div.s_contents dl {width: 450px; height: 500px; position: relative; outline: 1px solid red;}
+div.search div.s_contents dt {width: 150px; height: 40px; text-align: center; line-height: 40px; float: left; border-bottom: 1px solid #707070; color: #707070}
+div.search div.s_contents dt.on {font-weight: bold; border-bottom: 3px solid #707070;}
+div.search div.s_contents dd {position: absolute; top: 40px; left: 0; width: 100%; height: 440px;}
+div.search div.s_contents dd.hidden {display: none;}
+div.search div.s_contents dd div.where {padding: 10px;}
+div.search div.s_contents dd div.where input {width: 100%; height: 50px; border-radius: 10px; border: none; font-size: 15px; font-weight: bold;}
+div.search div.s_contents dd div.start_point{padding: 10px; width: 40%; float: left; margin-right: 30px;}
+div.search div.s_contents dd div.start_point div{width: 100%; height: 30px; line-height: 30px; text-align: center; padding: 10px; background-color: #fff; border-radius: 10px;}
+div.search div.s_contents dd div.when{padding: 10px; width: 40%; float: left;}
+div.search div.s_contents dd div.when div{width: 100%; height: 30px; line-height: 30px; text-align: center; padding: 10px; background-color: #fff; border-radius: 10px;}
+div.search div.s_contents dd div.when div i {margin-right: 5px;}
+div.search div.s_contents dd div.w_select {display: none;}

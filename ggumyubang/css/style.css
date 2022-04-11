@@ -86,3 +86,14 @@ main div.maincontents section.shop div.show div.select div.detail {font-size: 16
 main div.maincontents section.shop div.show div.select div.detail div.img {float: left; margin-right: 30px;}
 main div.maincontents section.shop div.show div.select div.detail div.img img {width: 100px; height: auto;}
 main div.maincontents section.shop div.show div.select div.detail div.txt2 {float: left; text-align: left;}
+
+main div.maincontents section.best {display: block;}
+main div.maincontents section.best h2 {font-size: 50px; margin: 80px 0; text-align: center;}
+main div.maincontents section.best .b_contents {width: 1320px;}
+main div.maincontents section.best .b_contents ul {width: 1320px; display: flex;justify-content: space-between;}
+main div.maincontents section.best .b_contents ul li {width: 250px;}
+main div.maincontents section.best .b_contents ul li div.b_product {width: 250px; position: relative;}
+main div.maincontents section.best .b_contents ul li div.b_product img {width: 250px; height: 300px;}
+main div.maincontents section.best .b_contents ul li div.b_product i {position: absolute; top: -2px; left: 0; font-size: 60px; color: #3bb168;}
+main div.maincontents section.best .b_contents ul li div.b_product span {position: absolute; top: 10px; left: 20px; font-size: 30px;}
+main div.maincontents section.best .b_contents ul li div.b_name {width: 250px; height: 100px;}

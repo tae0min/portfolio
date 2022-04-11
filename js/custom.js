@@ -244,7 +244,7 @@ bar[2].addEventListener('click',function(){
         webLink.setAttribute('href','leisure/index.html')
     })
     content[2].addEventListener('click',function(){
-        webText.innerHTML = '<strong>웹투어</strong><br><br>여행 예약 사이트인 웹투어 웹페이지를 리뉴얼한 사이트입니다.';
+        webText.innerHTML = '<strong>FREEFLY</strong><br><br>활동 적인 여행을 위한 예약 사이트입니다.';
         webLink.setAttribute('href','travel/index.html')
     })
     content[5].addEventListener('click',function(){

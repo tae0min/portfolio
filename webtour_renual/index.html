@@ -9,27 +9,200 @@
         <title>웹투어</title>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/1c05f76ac6.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <script src="js/custom.js"></script>
     </head>
     <body>
         <div id="popup">
-
+            <img src="img/popup_banner.png" alt="괌 여행 패키지 배너" usemap="#guam">
+            <map name="guam">
+                <area shape="rect" coords="44,168,132,194" href="https://air.webtour.com/aa/aaPromotion_evt.asp?eIdx=767" alt="괌 여행 패키지 예약 사이트">
+            </map>
+            <div class="close"><i class="fa-solid fa-x"></i></div>
         </div>
-        <!-- <div id="wrap">
-            <header>
-                <div class="top_bar">
-                    <a href="index.html" class="home">HOME</a>
-                    <ul>
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">예약확인/결제</a></li>
-                        <li><a href="#">고객센터</a></li>
-                        <li><a href="#">단체/법인문의</a></li>
+        <div id="wrap">
+            <div id="header_wrap">
+                <header>
+                    <div class="menu">
+                        <h1><a href="index.html"><img src="img/webtour_logo2.png" alt="webtour_logo"></a></h1>
+                        <nav>
+                            <ul class="top_menu">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">예약확인/결제</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">단체법인 문의</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="h_txt">
+                        <p>어디로 갈지 고민이라면?<br><strong>웹.투.어!</strong></p>
+                    </div>
+                </header>
+            </div>
+            <div class="main_menu">
+                <nav>
+                    <div class="fullmenu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <ul class="gnb_out">
+                        <li><a href="#">해외할인항공</a>
+                            <ul>
+                                <li><a href="#">실시간항공권예약</a></li>
+                                <li><a href="#">조건별실시간특가</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">항공사기획전</a></li>
+                                <li><a href="#">항공사공지사항/여행정보</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">해외호텔</a>
+                            <ul>
+                                <li><a href="#">아시아</a></li>
+                                <li><a href="#">홍콩/중국</a></li>
+                                <li><a href="#">일본</a></li>
+                                <li><a href="#">유럽</a></li>
+                                <li><a href="#">미주/캐나다</a></li>
+                                <li><a href="#">남태평양</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">해외여행</a>
+                            <ul>
+                                <li><a href="#">괌/사이판</a></li>
+                                <li><a href="#">배트남</a></li>
+                                <li><a href="#">필리핀</a></li>
+                                <li><a href="#">유럽</a></li>
+                                <li><a href="#">태국</a></li>
+                                <li><a href="#">일본</a></li>
+                                <li><a href="#">몰디브</a></li>
+                                <li><a href="#">대양주</a></li>
+                                <li><a href="#">미주</a></li>
+                                <li><a href="#">안심희망여행</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">허니문</a>
+                            <ul>
+                                <li><a href="#">몰디브</a></li>
+                                <li><a href="#">칸쿤</a></li>
+                                <li><a href="#">하와이</a></li>
+                                <li><a href="#">제주</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">골프</a>
+                            <ul>
+                                <li><a href="#">괌/사이판</a></li>
+                                <li><a href="#">필리핀</a></li>
+                                <li><a href="#">태국</a></li>
+                                <li><a href="#">일본</a></li>
+                                <li><a href="#">제주</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">현지투어/패스</a>
+                            <ul>
+                                <li><a href="#">현지투어/패스</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </div>
-            </header>
-        </div> -->
-        
+                    <ul class="gnb_in">
+                        <li><a href="#">국내항공</a>
+                            <ul>
+                                <li><a href="#">국내항공 실시간예약</a></li>
+                                <li><a href="#">제주할인항공권</a></li>
+                                <li><a href="#">예약안내</a></li>
+                                <li><a href="#">결항시 대처법</a></li>
+                                <li><a href="#">자주묻는질문</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">국내숙박</a>
+                            <ul>
+                                <li><a href="#">서울</a></li>
+                                <li><a href="#">제주</a></li>
+                                <li><a href="#">부산</a></li>
+                                <li><a href="#">강원</a></li>
+                                <li><a href="#">경기</a></li>
+                                <li><a href="#">인천</a></li>
+                                <li><a href="#">경상</a></li>
+                                <li><a href="#">전라</a></li>
+                                <li><a href="#">충청</a></li>
+                                <li><a href="#">대구</a></li>
+                                <li><a href="#">대전</a></li>
+                                <li><a href="#">울산</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">KTX/기차</a>
+                            <ul>
+                                <li><a href="#">기차예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">투어/티켓</a>
+                            <ul>
+                                <li><a href="#">제주입장권</a></li>
+                                <li><a href="#">내륙입장권</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">렌터카</a>
+                            <ul>
+                                <li><a href="#">제주도렌터카</a></li>
+                                <li><a href="#">내륙렌터카</a></li>
+                                <li><a href="#">제주도렌터카 예약안내</a></li>
+                                <li><a href="#">내륙렌터카 예약안내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search">
+                <div class="s_contents">
+                    <h2>어떤 여행을 원해?</h2>
+                    <dl>
+                        <dt class="on">패키지</dt>
+                        <dd>
+                            <div class="where">
+                                <input type="text" placeholder="어디로 떠나세요?">
+                            </div>
+                            <div class="start_point">
+                                <div class="text">인천/김포 출발
+                                    <!-- <ul>
+                                        <li><a href="#">서울(인천/김포)</a></li>
+                                        <li><a href="#">부산</a></li>
+                                        <li><a href="#">대구</a></li>
+                                        <li><a href="#">광주</a></li>
+                                        <li><a href="#">제주</a></li>
+                                        <li><a href="#">양양</a></li>
+                                        <li><a href="#">강원</a></li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                            <div class="when">
+                                <div class="text"><i class="fa-solid fa-calendar"></i>여행시작일 선택</div>
+                            </div>
+                            <div class="w_select">
+                                <h2>주요 도시</h2>
+                                <ul clas="w_nav">
+                                    <li><a href="#">지금 여행 가능</a></li>
+                                    <li><a href="#">동남아/대만/서남아</a></li>
+                                    <li><a href="#">유럽/아프리카</a></li>
+                                </ul>
+                            </div>
+                            <div class="ticket"> </div>
+                            <div class="with"> </div>
+                        </dd>
+                        <dt>항공</dt>
+                        <dd class="hidden">
+
+                        </dd>
+                        <dt>호텔</dt>
+                        <dd class="hidden">
+
+                        </dd>
+                    </dl>
+                </div> 
+            </div>
+            <footer>
+
+            </footer>
+        </div>
     </body>
 </html>
